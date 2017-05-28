@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--I'm using css file you can download from bootstrap that will give you the bootstrap library-->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+
+    <!--My personal CSS-->
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <!--Here is the CDN link, but we dont need it since we have it downloaded-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+  </head>
+  <body class='container'>
+    <h1 id='header' class='text-center'>jQuery Calculator</h1>
+
+    <!--Where it displays the output-->
+    <div class="jumbotron">
+      <h3 id='output' class='text-center'></h3>
+    </div>
+
+    <div class='row'>
+      <div class='col-xs-3 col-xs-offset-9 text-center'>
+        <button id='clear_button' class='btn btn-lg btn-danger'>C</button>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>1</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>2</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>3</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-info operator_button'>+</button>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>4</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>5</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>6</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-info operator_button'>-</button>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>7</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>8</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>9</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-info operator_button'>x</button>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg number_button'>.</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-primary number_button'>0</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button id='equal_button' class='btn btn-lg btn-success'>=</button>
+      </div>
+      <div class='col-xs-3 text-center'>
+        <button class='btn btn-lg btn-info operator_button'>/</button>
+      </div>
+    </div>
+
+    <!--This is the jquery library that I have downloaded in the javascripts folder-->
+    <script type='text/javascript' src='javascripts/jquery-3.2.1.min.js'></script>
+
+    <!--This is the file I am going to write my javascript in. Notice that its below the jquery script-->
+    <!--Its below that jquery file because I need access to the jquery library before I can use it in this file-->
+    <script type='text/javascript' src='javascripts/calc.js'></script>
+  </body>
+</html>
